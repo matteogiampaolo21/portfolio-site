@@ -2,8 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body{
     background-color: #27272a;
     color: #e5e5e5;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    
+}
+.hero-grid{
+    display: grid;
+    grid-template-columns: 3% 90% 3%;
+    justify-content: space-between;
+    
+}
+.project-block{
+    opacity: 0.8;
+    background: repeating-linear-gradient( -25deg, #34d399, #34d399 50%, #10b981 20px, #10b981 100% );
+    padding: 210px 300px ;
+}
+.left-border{
+    border-top: 3px;
+    border-left: 3px;
+    border-color: #34d399;  
+    border-style: solid;
+}
+.right-border{
+    border-bottom: 3px;
+    border-right: 3px;
+    border-color: #34d399;  
+    border-style: solid;
 }
