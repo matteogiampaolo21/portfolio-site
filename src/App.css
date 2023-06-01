@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+i,button,a,span{
+    transition: 0.3s;
+}
 body{
     background-color: #1e293b;
     color: #e5e5e5;
@@ -17,8 +19,13 @@ body{
     
 }
 .project-block{
-    opacity: 0.8;
+    opacity: 1;
     background: repeating-linear-gradient( -25deg, #34d399, #34d399 50%, #10b981 20px, #10b981 100% );
+    padding: 210px 300px ;
+}
+.diagonal-bg{
+    opacity: 1;
+    background: repeating-linear-gradient( 5deg, #1e293b, #1e293b 50%, #0f172a 20px, #0f172a 100% );
     padding: 210px 300px ;
 }
 .project-grid{

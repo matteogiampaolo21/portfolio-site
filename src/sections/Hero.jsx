@@ -4,7 +4,7 @@ export const Hero = () => {
     return(
         <div className="hero-grid my-48 px-300">
             <div className="flex flex-col">
-                <div className="h-1/3 w-full left-border"></div>
+                <div className="h-1/3 w-full left-border rounded-tl-sm"></div>
                 <div></div>
             </div>
 
@@ -17,7 +17,7 @@ export const Hero = () => {
 
             <div className="flex flex-col">
                 <div className="h-3/4"></div>
-                <div className="w-full h-1/3 right-border"></div>
+                <div className="w-full h-1/3 right-border rounded-br-sm"></div>
             </div>
         </div>
     );
