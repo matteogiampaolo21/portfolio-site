@@ -11,7 +11,7 @@ export const Hero = () => {
             <div className="hero-block my-5 mx-24 2xl:mx-10">
                 <h1 className="text-8xl break-words ">Matteo <br /> Giampaolo.</h1>
                 <p className="text-lg mt-5">
-                    I am a web developer passionate about learning and improving my skill set. <br /> <span className={clickHereStyle}>Click here</span> for a quick overview for one of my projects.
+                    I am a web developer passionate about learning and improving my skill set. <br /> <span className={clickHereStyle}>Click here</span> for a quick overview of my projects.
                 </p>
             </div>
 

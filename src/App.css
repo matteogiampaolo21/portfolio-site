@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #27272a;
+    background-color: #1e293b;
     color: #e5e5e5;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     
@@ -21,6 +21,14 @@ body{
     background: repeating-linear-gradient( -25deg, #34d399, #34d399 50%, #10b981 20px, #10b981 100% );
     padding: 210px 300px ;
 }
+.project-grid{
+    display: grid;
+    grid-template-areas: 
+        "a a a"
+        "a a a"
+        "b b c";
+}
+.grid-area-1{grid-area: a;}.grid-area-2{grid-area: b;}.grid-area-3{grid-area: c;}
 .left-border{
     border-top: 3px;
     border-left: 3px;
