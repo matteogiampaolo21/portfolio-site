@@ -24,10 +24,10 @@ body{
     padding: 210px 300px ;
 }
 .diagonal-bg{
-    opacity: 1;
-    background: repeating-linear-gradient( 5deg, #1e293b, #1e293b 50%, #0f172a 20px, #0f172a 100% );
-    padding: 210px 300px ;
+    background: repeating-linear-gradient( -25deg, #10b981, #10b981 50%, #34d399 20px, #34d399 100% );
+    
 }
+
 .project-grid{
     display: grid;
     grid-template-areas: 
@@ -48,3 +48,4 @@ body{
     border-color: #34d399;  
     border-style: solid;
 }
+

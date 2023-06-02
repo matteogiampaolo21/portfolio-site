@@ -1,4 +1,7 @@
 export const Navbar = () => {
+
+   
+
     return(
       <nav className='px-300 pt-50'>
         <ul className='flex flex-row gap-x-20 text-xl items-center'>
