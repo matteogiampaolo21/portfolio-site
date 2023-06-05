@@ -1,4 +1,6 @@
 export const Footer = () => {
+    const year = new Date().getFullYear();
+    
     return (
         <div>
             <nav className='px-300 pt-50 pb-5'>
@@ -26,7 +28,7 @@ export const Footer = () => {
                 <div className="text-justify flex flex-col gap-3">
                     <h1 className="text-xl">Lorem ipsum dolor sit amet.</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ex sapiente nemo odit possimus incidunt minima, dignissimos fuga, nobis quaerat harum? Labore explicabo optio accusamus illo, in reprehenderit quae modi!</p>
-                    <p className="mt-auto text-gray-400">&copy; Matteo Giampaolo 2023</p>
+                    <p className="mt-auto text-gray-400">&copy; Matteo Giampaolo {year}</p>
                 </div>
                 <form className="flex flex-col w-full gap-y-5" action="">
                     <h1 className="text-2xl font-bold">Contact Me</h1>

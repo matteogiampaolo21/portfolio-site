@@ -2,7 +2,7 @@ export const Hero = () => {
 
     const clickHereStyle = 'hover:underline cursor-pointer text-emerald-400 hover:text-emerald-300 duration-700'
     return(
-        <div className="hero-grid my-48 px-300">
+        <div className="hero-grid mt-56 mb-300 px-300">
             <div className="flex flex-col">
                 <div className="h-1/3 w-full left-border rounded-tl-sm"></div>
                 <div></div>

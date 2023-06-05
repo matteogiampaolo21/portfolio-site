@@ -2,11 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 5px;  
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #059669;
+}
+.active{
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s linear;
+    display: block;
+
+
+    z-index: 40;
+    /* padding: 0 7%; */
+}
+.hidden{
+    
+    top: -80px;
+    transition: 0.3s linear;
+
+}
 
 i,button,a,span{
     transition: 0.3s;
 }
 body{
+    padding-top: 50px;
     background-color: #1e293b;
     color: #e5e5e5;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -20,7 +51,7 @@ body{
 }
 .project-block{
     opacity: 1;
-    background: repeating-linear-gradient( -25deg, #34d399, #34d399 50%, #10b981 20px, #10b981 100% );
+    background: repeating-linear-gradient( -25deg, #334155, #334155 50%, #1e293b 20px, #1e293b 100% );
     padding: 210px 300px ;
 }
 .diagonal-bg{

@@ -1,9 +1,41 @@
+import { useEffect, useState } from "react"
+
 export const Navbar = () => {
 
-   
+    const [show, setShow] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    
+
+    const controlNavbar = () => {
+      
+      if (typeof window !== 'undefined') { 
+        if (window.scrollY < lastScrollY) { // if scroll down hide the navbar
+          setShow(false); 
+        } else { // if scroll up show the navbar
+          setShow(true);  
+        }
+
+        // remember current page location to use in the next move
+        setLastScrollY(window.scrollY); 
+      }
+    };
+
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', controlNavbar);
+
+        // cleanup function
+        return () => {
+          window.removeEventListener('scroll', controlNavbar);
+        };
+      }
+    }, [lastScrollY]);
+
+  
 
     return(
-      <nav className='px-300 pt-50'>
+      <nav className={`navbar px-300 py-3 bg-slate-900 active ${show && 'hidden'}`}>
         <ul className='flex flex-row gap-x-20 text-xl items-center'>
           <li><h1 className='text-4xl '>MG  </h1></li>
           <li className='ml-auto'><a className='hover:text-emerald-400' href="">Home</a></li>
