@@ -15,7 +15,7 @@
     background: #059669;
 }
 .active{
-    height: 4rem;
+    background-color: #1b2536;
     width: 100%;
     position: fixed;
     top: 0px;
@@ -28,7 +28,7 @@
 }
 .hidden{
     
-    top: -80px;
+    top: -100px;
     transition: 0.3s linear;
 
 }
@@ -45,14 +45,16 @@ body{
 }
 .hero-grid{
     display: grid;
-    grid-template-columns: 3% 90% 3%;
+    grid-template-columns: 2% 90%  2%;
     justify-content: space-between;
     
 }
 .project-block{
     opacity: 1;
     background: repeating-linear-gradient( -25deg, #334155, #334155 50%, #1e293b 20px, #1e293b 100% );
-    padding: 210px 300px ;
+    padding-top: 210px ;
+    padding-bottom: 210px;
+    
 }
 .diagonal-bg{
     background: repeating-linear-gradient( -25deg, #10b981, #10b981 50%, #34d399 20px, #34d399 100% );
@@ -75,6 +77,19 @@ body{
 }
 .right-border{
     border-bottom: 3px;
+    border-right: 3px;
+    border-color: #34d399;  
+    border-style: solid;
+}
+
+.left-border-2{
+    border-bottom: 3px;
+    border-left: 3px;
+    border-color: #34d399;  
+    border-style: solid;
+}
+.right-border-2{
+    border-top: 3px;
     border-right: 3px;
     border-color: #34d399;  
     border-style: solid;

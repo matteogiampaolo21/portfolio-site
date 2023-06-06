@@ -5,10 +5,10 @@ import bugtracker from '../assets/bug-tracker.png'
 
 
 export const Projects = () => {
-    const imgStyle = "w-2/3 object-cover shadow-xl rounded-l-sm";
-    const cardStyle = "flex flex-col bg-zinc-900 p-5 shadow-xl rounded-r-sm";
+    const imgStyle = "w-2/3 h-img object-cover shadow-xl rounded-l-sm";
+    const cardStyle = "flex flex-col h-img bg-zinc-900 p-5 shadow-xl rounded-r-sm";
     return (
-        <div className=" project-block ">
+        <div className=" project-block px-400">
             
             <div className='flex flex-col gap-10 '>
 

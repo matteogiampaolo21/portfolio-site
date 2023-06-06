@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       spacing: {
-        '300': '300px',
+        '400': '400px',
         '50' : '50px',
+        'img' : '480px',
         
       }
     },

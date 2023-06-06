@@ -35,7 +35,7 @@ export const Navbar = () => {
   
 
     return(
-      <nav className={`navbar px-300 py-3 bg-slate-900 active ${show && 'hidden'}`}>
+      <nav className={`navbar px-400 py-7  active ${show && 'hidden'}`}>
         <ul className='flex flex-row gap-x-20 text-xl items-center'>
           <li><h1 className='text-4xl '>MG  </h1></li>
           <li className='ml-auto'><a className='hover:text-emerald-400' href="">Home</a></li>
