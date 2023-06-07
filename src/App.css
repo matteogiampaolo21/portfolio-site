@@ -94,4 +94,6 @@ body{
     border-color: #34d399;  
     border-style: solid;
 }
-
+@media (max-width:1280px){
+    
+}

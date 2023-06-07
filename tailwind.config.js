@@ -9,7 +9,10 @@ export default {
       spacing: {
         '400': '400px',
         '50' : '50px',
-        'img' : '480px',
+        'img' : '500px',
+        'my-xl':'1049px',
+        'my-lg':'700px',
+        'my-md':'300px',
         
       }
     },
@@ -18,11 +21,11 @@ export default {
 
       'md': {"max" :'768px'},
 
-      'lg': {"max" :'1024px'},
+      'lg': {"min":"769px","max" :'1024px'},
 
-      'xl': {"max" :'1280px'},
+      'xl': {"min":"1025px","max" :'1280px'},
 
-      '2xl': {"max" :'1536px'},
+      '2xl': {"min":"1281px","max" :'1536px'},
     }
   },
   plugins: [],
