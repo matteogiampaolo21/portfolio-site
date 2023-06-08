@@ -8,8 +8,9 @@ export default {
     extend: {
       spacing: {
         '400': '400px',
+        '300': '300px',
         '50' : '50px',
-        'img' : '500px',
+        'img-xs' : '200px',
         'my-xl':'1049px',
         'my-lg':'700px',
         'my-md':'300px',
@@ -17,15 +18,22 @@ export default {
       }
     },
     screens: {
-      'sm': {"max" : '640px'},
+      "xs": "250px",
 
-      'md': {"max" :'768px'},
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
 
-      'lg': {"min":"769px","max" :'1024px'},
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
 
-      'xl': {"min":"1025px","max" :'1280px'},
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
 
-      '2xl': {"min":"1281px","max" :'1536px'},
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     }
   },
   plugins: [],

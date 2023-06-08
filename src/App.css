@@ -94,6 +94,17 @@ body{
     border-color: #34d399;  
     border-style: solid;
 }
-@media (max-width:1280px){
-    
-}
+@media only screen and (max-width: 640px) {
+    .hero-grid{
+        display: grid;
+        grid-template-columns: 2% 95%  2%;
+        justify-content: space-between;
+    }
+    .project-block{
+        opacity: 1;
+        background: repeating-linear-gradient( -25deg, #334155, #334155 50%, #1e293b 20px, #1e293b 100% );
+        padding-top: 130px ;
+        padding-bottom: 130px;
+        
+    }
+  }
