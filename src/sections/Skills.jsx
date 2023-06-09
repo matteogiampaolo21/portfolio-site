@@ -1,8 +1,8 @@
 export const Skills = () => {
-    const boxStyle = "bg-slate-800 text-md text-center break-word shadow-lg h-12 items-center flex justify-center rounded-sm "
+    const boxStyle = "bg-slate-800 text-md text-center break-word shadow-lg h-12 items-center flex justify-center rounded-sm xl:text-lg"
     return(
-      <div className='bg-emerald-500 py-12 '>
-        <div className='grid  gap-5 px-4 mx-auto w-300 grid-cols-2'>        
+      <div className='bg-emerald-500 py-12'>
+        <div className='grid  gap-5 px-4 mx-auto w-300 grid-cols-2 sm:w-440 md:w-750 md:grid-cols-5 xl:w-1260 xl:tracking-widest '>        
   
           <div className={boxStyle}>HTML</div>
           <div className={boxStyle}>CSS</div>

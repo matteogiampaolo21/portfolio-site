@@ -5,24 +5,24 @@ import bugtracker from '../assets/bug-tracker.png'
 
 
 export const Projects = () => {
-    const imgStyle = "  object-cover shadow-xl  w-full h-img-xs rounded-t-sm ";
-    const cardStyle = " flex flex-col  bg-zinc-900 p-5 shadow-xl  h-auto rounded-b-sm ";
+    const imgStyle = "  object-cover shadow-xl  w-full h-img-xs   sm:h-img-sm md:h-img-md xl:w-3/4 xl:h-auto";
+    const cardStyle = " flex flex-col  bg-zinc-900 p-5 shadow-xl  h-auto  xl:w-1/4 ";
     return (
-        <div className=" project-block w-full">
+        <div className=" project-block py-24 w-full">
             
-            <div className='flex flex-col gap-10  mx-auto w-300'>
+            <div className='flex flex-col gap-10  mx-auto w-300 sm:w-440 md:w-750 md:gap-16 xl:w-1260'>
 
 
-                <div className=' flex flex-col'>
+                <div className=' flex flex-col xl:flex-row'>
                     <img className={imgStyle} src={mercury} alt="Texting App." />
                     <div className={cardStyle}>
                         <h2 className='mb-5 font-bold text-emerald-300 text-2xl'>Mercury</h2>
-                        <p className=' mb-6 text-lg'>A texting app made with <span className=''> Firebase </span>and <span className=''>React</span>. Users can create rooms with multiple people, and can contact individual people through contacts.</p>
+                        <p className=' mb-6 text-lg'>A texting app made with Firebase and React. Users can create rooms with multiple people, and can contact individual people through contacts.</p>
                         <div className='mt-auto'><i className="fa-brands fa-github fa-2xl hover:text-emerald-400"></i> <i className="ml-3 fa-solid fa-link fa-xl hover:text-emerald-400"></i></div>
                     </div>
                 </div>
 
-                <div className=' flex flex-col'>
+                <div className=' flex flex-col xl:flex-row'>
                     <img className={imgStyle} src={charon} alt="Texting App." />
                     <div className={cardStyle}>
                         <h2 className=' mb-5 font-bold text-emerald-300 text-2xl'>Charon</h2>
@@ -31,7 +31,7 @@ export const Projects = () => {
                     </div>
                 </div>
 
-                <div className=' flex flex-col'>
+                <div className=' flex flex-col xl:flex-row'>
                     <img className={imgStyle} src={bugtracker} alt="Texting App." />
                     <div className={cardStyle}>
                         <h2 className=' mb-5 font-bold text-emerald-300 text-2xl'>Bug Tracker</h2>

@@ -7,20 +7,21 @@ export default {
   theme: {
     extend: {
       spacing: {
+        '1260' : '1260px',
+        '750': '750px',
+        '440': '440px',
         '400': '400px',
         '300': '300px',
-        '50' : '50px',
         'img-xs' : '200px',
-        'my-xl':'1049px',
-        'my-lg':'700px',
-        'my-md':'300px',
+        'img-sm' : '250px',
+        'img-md' : '375px',
         
       }
     },
     screens: {
       "xs": "250px",
 
-      'sm': '640px',
+      'sm': '465px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',

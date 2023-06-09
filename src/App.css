@@ -37,7 +37,7 @@ i,button,a,span{
     transition: 0.3s;
 }
 body{
-    padding-top: 50px;
+    padding-top: 100px;
     background-color: #1e293b;
     color: #e5e5e5;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -52,8 +52,7 @@ body{
 .project-block{
     opacity: 1;
     background: repeating-linear-gradient( -25deg, #334155, #334155 50%, #1e293b 20px, #1e293b 100% );
-    padding-top: 210px ;
-    padding-bottom: 210px;
+    
     
 }
 .diagonal-bg{
@@ -94,17 +93,3 @@ body{
     border-color: #34d399;  
     border-style: solid;
 }
-@media only screen and (max-width: 640px) {
-    .hero-grid{
-        display: grid;
-        grid-template-columns: 2% 95%  2%;
-        justify-content: space-between;
-    }
-    .project-block{
-        opacity: 1;
-        background: repeating-linear-gradient( -25deg, #334155, #334155 50%, #1e293b 20px, #1e293b 100% );
-        padding-top: 130px ;
-        padding-bottom: 130px;
-        
-    }
-  }
