@@ -23,8 +23,10 @@ export const Navbar = () => {
     //   window.addEventListener('resize', handleResize) 
     // });
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
+
+    
 
     const controlNavbar = () => {
       if (typeof window !== 'undefined') { 
@@ -50,23 +52,24 @@ export const Navbar = () => {
       }
     }, [lastScrollY]);
 
+    
+
 
     return(
       
       <div >
         <nav className={`active ${show && 'hidden'}`}>
-          <ul className='flex flex-row py-3  mx-auto  gap-x-20 text-xl items-center w-300 sm:w-440 md:w-750 xl:w-1260 '>
+          <ul className=' flex flex-row py-3  mx-auto  gap-x-20 text-xl items-center w-300 sm:w-440 md:w-750 xl:w-1260 '>
               
-            
+           
               
-            <li className="ml-auto">
+            <li className="ml-auto navbar-color px-5 py-2 rounded border-2 border-slate-950 bg-slate-900">
               <div className='flex flex-row gap-5 items-center'>
-                <i className="fa-solid fa-envelope fa-xl hover:text-emerald-400"></i>
-                <i className="fa-brands fa-github fa-xl hover:text-emerald-400"></i>
-                  
-                  
-                <button className='border-2 rounded px-4 py-1 hover:bg-emerald-500 hover:text-white border-emerald-400  hover:border-white'> Resume </button>
-                
+                <i className="fa-solid  fa-envelope text-3xl hover:text-emerald-400"></i>
+
+                <i className="fa-brands fa-github text-3xl hover:text-emerald-400"></i>
+
+                <i className="fa-solid fa-file-pdf text-3xl hover:text-emerald-400"></i>
               </div>
             </li>
           </ul>

@@ -14,8 +14,9 @@
 ::-webkit-scrollbar-thumb {
     background: #059669;
 }
+
 .active{
-    background-color: #1b2536;
+    
     width: 100%;
     position: fixed;
     top: 0px;
