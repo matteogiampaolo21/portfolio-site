@@ -18,7 +18,10 @@ export const Projects = () => {
                     <div className={cardStyle}>
                         <h2 className='mb-5 font-bold text-emerald-300 text-2xl'>Mercury</h2>
                         <p className=' mb-6 text-lg'>A texting app made with Firebase and React. Users can create rooms with multiple people, and can contact individual people through contacts.</p>
-                        <div className='mt-auto'><i className="fa-brands fa-github fa-2xl hover:text-emerald-400"></i> <i className="ml-3 fa-solid fa-link fa-xl hover:text-emerald-400"></i></div>
+                        <div className='mt-auto'>
+                            <a href="https://github.com/matteogiampaolo21/chat-app-firebase"><i className="fa-brands fa-github fa-2xl hover:text-emerald-400"></i></a>
+                            <i className="ml-3 fa-solid fa-link fa-xl hover:text-emerald-400"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -27,7 +30,10 @@ export const Projects = () => {
                     <div className={cardStyle}>
                         <h2 className=' mb-5 font-bold text-emerald-300 text-2xl'>Charon</h2>
                         <p className=' mb-6 text-lg'>A ecommerce site made with React and Typescript. Users can browse through products and specific categories, and add them to cart. The site uses the DummyJSON API to show fake products.</p>
-                        <div className='mt-auto'><i className="fa-brands fa-github fa-2xl hover:text-emerald-400"></i> <i className="ml-3 fa-solid fa-link fa-xl hover:text-emerald-400"></i></div>
+                        <div className='mt-auto'>
+                            <a href="https://github.com/matteogiampaolo21/TypeScript-Ecommerce"><i className="fa-brands fa-github fa-2xl hover:text-emerald-400"></i></a>
+                            <i className="ml-3 fa-solid fa-link fa-xl hover:text-emerald-400"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -36,7 +42,9 @@ export const Projects = () => {
                     <div className={cardStyle}>
                         <h2 className=' mb-5 font-bold text-emerald-300 text-2xl'>Bug Tracker</h2>
                         <p className=' mb-6 text-lg'>This site was build using the MERN stack and has full CRUD functionalities and authentication. Users can login, create projects and other users to projects. Inside projects users can add tickets to track their work.</p>
-                        <div className='mt-auto'><i className="fa-brands  fa-github fa-2xl hover:text-emerald-400"></i> <i className="ml-3 fa-solid fa-link fa-xl hover:text-emerald-400"></i></div>
+                        <div className='mt-auto'>
+                            <a href="https://github.com/matteogiampaolo21/MERN-Bug-Tracker"><i className="fa-brands  fa-github fa-2xl hover:text-emerald-400"></i></a>
+                        </div>
                     </div>
                 </div>  
             

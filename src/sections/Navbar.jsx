@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
-
+import resume from '../assets/MatteoGiampaoloResume.pdf';
 export const Navbar = () => {
-
 
     // const [smallNavbar, setNavbar] = useState(true)
 
@@ -52,7 +51,9 @@ export const Navbar = () => {
       }
     }, [lastScrollY]);
 
-    
+    const scrollToFooter = () => {
+      window.scrollTo({top:10500,behavior:'smooth'});
+    }
 
 
     return(
@@ -65,11 +66,11 @@ export const Navbar = () => {
               
             <li className="ml-auto navbar-color px-5 py-2 rounded border-2 border-slate-950 bg-slate-900">
               <div className='flex flex-row gap-5 items-center'>
-                <i className="fa-solid  fa-envelope text-3xl hover:text-emerald-400"></i>
+                <button onClick={scrollToFooter}><i className="fa-solid  fa-envelope text-3xl hover:text-emerald-400"></i></button>
 
-                <i className="fa-brands fa-github text-3xl hover:text-emerald-400"></i>
+                <a href="https://github.com/matteogiampaolo21" target='_blank' rel="noopener noreferrer"><i className="fa-brands fa-github text-3xl hover:text-emerald-400"></i></a>
 
-                <i className="fa-solid fa-file-pdf text-3xl hover:text-emerald-400"></i>
+                <a href={resume} target='_blank' rel="noopener noreferrer"><i className="fa-solid fa-file-pdf text-3xl hover:text-emerald-400"></i></a>
               </div>
             </li>
           </ul>
